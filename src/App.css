@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@600&family=Merriweather&display=swap');
+
+.App {
+  text-align: center;
+  height: 100vh;
+  color: #ff3d00;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+
+.content {
+  height: 100%;
+}
+
+img {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.questionImage {
+  padding: 0px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: inherit;
+}
+
+.prevQuestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.currQuestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 10px 10px 0 black;
+}
+
+.firstline {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.cardnumber {
+  background-color: #3f51b5;
+  color: white;
+  font-family: 'Barlow Semi Condensed';
+  text-align: center;
+  vertical-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: x-large;
+  margin-right: 5px;
+}
+
+.cardtitle {
+  background-color: lightgoldenrodyellow;
+  color: darkslateblue;
+  font-weight: 600;
+  font-family: 'Barlow Semi Condensed'; 
+  border-bottom: 2px solid #3f51b5;
+  padding: 2px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cardname {
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.cardsubtitle {
+  font-size: large;
+}
+
+.cardline {
+  background-color: antiquewhite;
+  margin-bottom: 5px;
+  border-bottom: 2px solid lightsalmon;
+  display: flex;
+  font-family: 'Abril Fatface';
+  font-size: larger;
+  padding: 10px 5px 10px 5px;
+}
+
+.questionline {
+  background-color: antiquewhite;
+  margin-bottom: 0px;
+  border-bottom: 2px solid lightsalmon;
+  display: flex;
+  font-family: 'Abril Fatface';
+  font-size: x-large;
+  color: #ff3d00;
+  padding: 20px 5px 20px 5px;
+}
+
+.lineleft {
+  text-align: left;
+  width: 50%;
+}
+
+.lineright {
+  text-align: right;
+  width: 50%;
+}
+
+.score {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50px;
+  color: #3f51b5;
+  background-color: white;
+  font-family: 'Barlow Semi Condensed';
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+  transition: opacity 500ms ease-in;
+}
+
+.incorrect {
+  background-color: red;
+  color: white;
+  transition: opacity 500ms ease-in;
+}
+
+.transparent {
+  opacity: 0;
+  pointer-events:none;
+}
+
+.hidden {
+  display: none;
+}
+
+.resultContainer {
+  background-color: lightgoldenrodyellow;
+  color: #3f51b5;
+  padding: 10px;
+  border-radius: 10px;
+  width: 40%;
+  box-shadow: 0 10px 10px 0 black;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.heading {
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+  color: #3f51b5;
+  font-size: xx-large;
+}
+
+.subheading {
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+.infotext {
+  font-family: 'Merriweather';
+  font-size: small;
+}
+
+.slide {
+  transition: 1000ms ease-in;
+  margin-left: -50%;
+  margin-right: 50%
+}
+
+@media (max-width: 800px) {
+  .questions {
+    flex-direction: column;
+    align-items: center;
+  }
+  #prevQuestion {
+    width: 100%;
+    height: 40vh;
+  }
+  #currQuestion {
+    width: 100%;
+    height: 60vh;
+  }
+  .card {
+    width: 60%;
+  }
+  .cardline, .cardnumber {
+    display: none;
+  }
+  .cardtitle {
+    font-size: large;
+  }
+  .questionline {
+    padding: 5px;
+    font-size: large;
+  }
+  #score {
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+  }
+}
