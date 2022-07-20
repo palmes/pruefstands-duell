@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pruefstands-duell/static/css/main.95d2d776.css",
-    "main.js": "/pruefstands-duell/static/js/main.c5b5fc69.js",
+    "main.js": "/pruefstands-duell/static/js/main.57f6fd66.js",
     "index.html": "/pruefstands-duell/index.html",
     "main.95d2d776.css.map": "/pruefstands-duell/static/css/main.95d2d776.css.map",
-    "main.c5b5fc69.js.map": "/pruefstands-duell/static/js/main.c5b5fc69.js.map"
+    "main.57f6fd66.js.map": "/pruefstands-duell/static/js/main.57f6fd66.js.map"
   },
   "entrypoints": [
     "static/css/main.95d2d776.css",
-    "static/js/main.c5b5fc69.js"
+    "static/js/main.57f6fd66.js"
   ]
 }
