@@ -1,6 +1,6 @@
 import React, { /*useEffect,*/ useState } from 'react';
 import './App.css';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import Result from './pages/Result';
@@ -25,7 +25,7 @@ const App = () => {
   })
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App" style={{ backgroundImage: "url(./pruefstand-blau.jpg)" }}>
         <ThemeProvider theme={theme}>
         <Routes>
@@ -35,7 +35,7 @@ const App = () => {
         </Routes>
         </ThemeProvider>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
