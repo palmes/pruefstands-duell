@@ -1,7 +1,7 @@
 {
   "name": "pruefstands-duell",
   "version": "0.1.0",
-  "homepage": "https://palmes.github.io/pruefstands-duell",
+  "homepage": "https://palmes.github.io/pruefstands-duell/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
