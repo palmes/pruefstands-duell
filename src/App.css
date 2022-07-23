@@ -213,34 +213,51 @@ img {
 }
 
 @media (max-width: 800px) {
+  .resultContainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
   .questions {
     flex-direction: column;
     align-items: center;
   }
-  #prevQuestion {
+  .prevQuestion {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
   }
-  #currQuestion {
+  .currQuestion {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
   }
   .card {
-    width: 60%;
+    max-height: 90%;
+    max-width: 90%;
   }
   .cardline, .cardnumber {
     display: none;
   }
   .cardtitle {
-    font-size: large;
+    font-size: medium;
+  }
+  .cardsubtitle {
+    font-size: small;
   }
   .questionline {
     padding: 5px;
     font-size: large;
   }
-  #score {
+  .score {
     height: 24px;
     line-height: 24px;
     border-radius: 12px;
+  }
+  .slide {
+    transition: 1000ms ease-in;
+    margin-top: -100%;
+    margin-bottom: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

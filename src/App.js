@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <HashRouter>
-      <div className="App" style={{ backgroundImage: "url(./pruefstand-blau.jpg)" }}>
+      <div className="App" >
         <ThemeProvider theme={theme}>
         <Routes>
           <Route path='/' exact element={<Home name={name} setName={setName} difficulty={difficulty} setDifficulty={setDifficulty} mode={mode} setMode={setMode}/>} />

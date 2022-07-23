@@ -20,7 +20,7 @@ const Result = ({name, score, finished, mode, difficulty}) => {
             <div className='questions'>
                 <div className='resultContainer'>
                     <div class='heading'>{ finished ? 'Glückwunsch!' : 'Game Over'}</div>
-                    <div id='resultScore'>Du hast im Modus {Modes.find((item) => item.value === mode).text} auf Schwierigkeit {Difficulties.find((item)=> item.value === difficulty).text} {score} Punkte erreicht, {name || 'Anonymous'}.</div>
+                    <div id='resultScore'>Du hast im Modus {Modes.find((item) => item.value === mode).text} auf Schwierigkeit {Difficulties.find((item)=> item.value === difficulty).text} {score} { score === 1 ? 'Punkt' : 'Punkte' } erreicht, {name || 'Anonymous'}.</div>
                     {!finished && <div id='resultText'>{resultStrings.find((item) => item.minScore <= score).text}</div>}
                     {finished && <div id='resultFinished'>Du hast diesen Modus durchgespielt. Bald werden mehr Autos hinzugefügt. Bis dahin versuche doch mal einen anderen Modus.</div>}
                     <Button

@@ -80,7 +80,8 @@ const Home = ({ name, setName, difficulty, setDifficulty, mode, setMode }) => {
                     <div className='infotext'>
                         Ein Spiel von JohnnyToaster.<br />
                         Quelle der Bilder und Leistungsdaten: 5ZYL_Marco auf Youtube.<br />
-                        Ergänzende Fahrzeugdaten von Wikipedia und ADAC.
+                        Ergänzende Fahrzeugdaten von Wikipedia und ADAC.<br />
+                        Alle Angaben ohne Gewähr.
                     </div>
                 </div>
             </div>

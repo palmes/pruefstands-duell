@@ -101,7 +101,7 @@ const Quiz = ({score, setScore, setFinished, mode, difficulty}) => {
             } else {
                 question.value = car.ps;
             }
-            question.img = car.img;
+            question.img = process.env.PUBLIC_URL + '/' + car.img;
             question.used = false;
             question.ccm = car.ccm;
             question.cyl = car.cyl;
@@ -135,7 +135,7 @@ const Quiz = ({score, setScore, setFinished, mode, difficulty}) => {
 
     return (
         <div className='content'>
-            <div className='score'>{score} Punkte</div>
+            <div className='score'>{score} { score === 1 ? 'Punkt' : 'Punkte' }</div>
             <div className={`score correct ${!showCorrect && 'transparent'}`}>Richtig</div>
             <div className={`score incorrect ${!showIncorrect && 'transparent'}`}>Falsch</div>
             <div className={`questions ${slide && 'slide'}`}>

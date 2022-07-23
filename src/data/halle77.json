@@ -394,5 +394,93 @@
         "ccm": 2226,
         "cyl": 5,
         "valves": 20 
+    },
+    {
+        "id": "J1",
+        "model": "Michas Audi Coupé 2.3E",
+        "description":"Am Leistungs-Tiefpunkt",
+        "ps": 66.9,
+        "nm": 124.3,
+        "img": "./autos/MichasCoupe2.jpg",
+        "ccm": 2309,
+        "cyl": 5,
+        "valves": 10  
+    },
+    {
+        "id": "J2",
+        "model": "Fiat X1/9 Bertone",
+        "description":"Mit Leistungsproblemen",
+        "ps": 64.6,
+        "nm": 81.7,
+        "img": "./autos/FiatX19.jpg",
+        "ccm": 1498,
+        "cyl": 4,
+        "valves": 8  
+    },
+    {
+        "id": "J3",
+        "model": "Audi \"300 R5T\"",
+        "description":"Nach Abstimmung mit Nils",
+        "ps": 309.7,
+        "nm": 366.2,
+        "img": "./autos/Audi300.jpg",
+        "ccm": 2226,
+        "cyl": 5,
+        "valves": 20  
+    },
+    {
+        "id": "J4",
+        "model": "Ford Focus ST",
+        "description":"Nach Tuning von Beast Factory",
+        "ps": 379.7,
+        "nm": 579.8,
+        "img": "./autos/FordFocusST.jpg",
+        "ccm": 2521,
+        "cyl": 5,
+        "valves": 20  
+    },
+    {
+        "id": "K1",
+        "model": "VW Scirocco GTX 16V",
+        "description": "",
+        "ps": 119.8,
+        "nm": 157,
+        "img": "./autos/VWSciroccoGTX16V.jpg",
+        "ccm": 1781,
+        "cyl": 4,
+        "valves": 16  
+    },
+    {
+        "id": "K2",
+        "model": "Corvette C4",
+        "description": "",
+        "ps": 187.1,
+        "nm": 355.9,
+        "img": "./autos/CorvetteC4.jpg",
+        "ccm": 5733,
+        "cyl": 8,
+        "valves": 16  
+    },
+    {
+        "id": "K3",
+        "model": "Renault Alpine V6 Turbo",
+        "description": "",
+        "ps": 176,
+        "nm": 269,
+        "img": "./autos/AlpineV6.jpg",
+        "ccm": 2458,
+        "cyl": 6,
+        "valves": 12  
+    },
+    {
+        "id": "K4",
+        "model": "Opel Kadett D 1.3 S",
+        "description": "",
+        "ps": 69.7,
+        "nm": 88.2,
+        "img": "./autos/KadettD13S.jpg",
+        "ccm": 1297,
+        "cyl": 4,
+        "valves": 8  
     }
 ]
